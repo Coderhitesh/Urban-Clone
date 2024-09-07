@@ -39,7 +39,7 @@ function CategoryHome() {
                 className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6"
               >
                 <div className="cats-wrap text-center">
-                  <a href="listing-search-v1.html" className="Goodup-catg-wrap">
+                  <a  className="Goodup-catg-wrap">
                     <div className="Goodup-catg-city">{category.cities}</div>
                     <div className="Goodup-catg-icon">
                       <i className={`fas ${category.icon}`}></i>
@@ -57,10 +57,9 @@ function CategoryHome() {
               </div>
             ))}
           </div>
-          {/* <!-- row --> */}
+
         </div>
       </section>
-      {/* <!-- ======================= Listing Categories End ======================== --> */}
     </>
   );
 }

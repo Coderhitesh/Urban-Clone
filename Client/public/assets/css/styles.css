@@ -5346,12 +5346,15 @@ ul.doc.ratting-view li i.filled {
 -------------------------------------------------------------*/
 /*-------------- Form Elements ----------------*/
 .form-control, select.form-control {
-    height:54px !important;
+    /* height:54px !important; */
     padding:10px 15px;
 	font-size:15px;
     border-radius: 1px;
     border-color:#eee;
 	color:#2b2e30;
+}
+.for-select-padding{
+    padding: 10px 15px !important;
 }
 .form-control.sm{
 	height:40px !important;
@@ -7730,7 +7733,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 }
 @media all and (min-width: 993px) and (max-width: 1280px) {
 	form.main-search-wrap.fl-wrap.half-column {
-		max-width: 536px;
+		max-width: 100%;
 	}
 }
 @media (max-height: 600px) {

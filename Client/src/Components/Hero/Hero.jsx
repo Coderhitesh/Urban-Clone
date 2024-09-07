@@ -1,4 +1,5 @@
 import React from 'react';
+import banner from './banner.webp'
 
 function Hero() {
   return (
@@ -6,9 +7,7 @@ function Hero() {
       {/* <!-- ======================= Home Banner ======================== --> */}
       <div
         className="home-banner margin-bottom-0"
-        style={{
-          background: '#f41b3b url(assets/img/banner-2.jpg) no-repeat',
-        }}
+        style={{background: `#f41b3b url(${banner}) no-repeat`,}}
         data-overlay="5"
       >
         <div className="container">
@@ -25,17 +24,19 @@ function Hero() {
               </div>
 
               <form className="main-search-wrap fl-wrap half-column">
-                <div className="main-search-item">
-                  <span className="search-tag">Find</span>
+                <div  className="main-search-item">
+                  <span style={{marginRight:"10px"}} className="search-tag">Find</span>
                   <input
+                   style={{borderLeft:'1px solid red'}}
                     type="text"
                     className="form-control radius"
                     placeholder="Nail salons, plumbers, takeout..."
                   />
                 </div>
                 <div className="main-search-item">
-                  <span className="search-tag">Where</span>
+                  <span style={{marginRight:"10px"}} className="search-tag">Where</span>
                   <input
+                  style={{borderLeft:'1px solid red'}}
                     type="text"
                     className="form-control"
                     placeholder="San Francisco, CA"
